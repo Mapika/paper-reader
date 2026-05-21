@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "mapika",
+  "description": "Claude Code plugins by Mapika.",
+  "owner": {
+    "name": "Mapika"
+  },
+  "plugins": [
+    {
+      "name": "paper-reader",
+      "description": "Read research papers with strict per-claim citations. Fetches PDF + tex source + real BibTeX from open sources (OpenAlex, Crossref, DBLP, ACL, Semantic Scholar, arXiv). Never fabricates citations.",
+      "author": {
+        "name": "Mapika"
+      },
+      "source": "./plugins/paper-reader",
+      "category": "research",
+      "homepage": "https://github.com/Mapika/paper-reader"
+    }
+  ]
+}

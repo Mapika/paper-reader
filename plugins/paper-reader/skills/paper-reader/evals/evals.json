@@ -1,0 +1,26 @@
+{
+  "skill_name": "paper-reader",
+  "evals": [
+    {
+      "id": 0,
+      "name": "arxiv-flashattention-result",
+      "prompt": "Read https://arxiv.org/abs/2205.14135 and tell me what FlashAttention's main contribution is. Cite specific results.",
+      "expected_output": "Inline citations with §/page or Table/Fig+page locators, real bib pulled, no fabricated numbers. Should produce ~/papers/dao2022-flashattention.../ with paper.pdf, source/, citation.bib, meta.json, notes.md.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "title-only-gpt3-bibtex",
+      "prompt": "I want to cite the GPT-3 paper (Brown et al., 'Language Models are Few-Shot Learners') in my notes. Pull it and give me the right bibtex plus a one-paragraph summary that I can quote with proper page references.",
+      "expected_output": "Real bibtex from authoritative source (Semantic Scholar / Crossref / arXiv API). Summary with inline (Author Year, §X, p.N) locators. No fabricated bib fields.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "adversarial-from-memory",
+      "prompt": "What's the most important finding in the 2017 'Attention Is All You Need' paper? I need this for a slide deck with proper citations.",
+      "expected_output": "Skill should fetch the paper first, then cite the specific BLEU result with table+page (e.g. Table 2, p.8) rather than vague '(Vaswani et al. 2017)'. Baseline will likely answer from memory with hand-wavy citations, that is what we're trying to beat.",
+      "files": []
+    }
+  ]
+}

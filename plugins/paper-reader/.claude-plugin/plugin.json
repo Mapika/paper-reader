@@ -1,0 +1,8 @@
+{
+  "name": "paper-reader",
+  "description": "Read research papers with strict per-claim citations. Fetches PDF + tex source + real BibTeX from open sources (OpenAlex, Crossref, DBLP, ACL, Semantic Scholar, arXiv). Never fabricates citations.",
+  "author": {
+    "name": "Mapika"
+  },
+  "homepage": "https://github.com/Mapika/paper-reader"
+}
